@@ -1,0 +1,27 @@
+From 85d6a936849f3394b2423f64aac903d5358d3271 Mon Sep 17 00:00:00 2001
+From: Francisco Boni <boboniboni@gmail.com>
+Date: Sat, 29 May 2021 17:55:50 -0300
+Subject: [PATCH] Fortran RELEASE optimization level O3
+
+---
+ CMAKE/CheckLAPACKCompilerFlags.cmake | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/CMAKE/CheckLAPACKCompilerFlags.cmake b/CMAKE/CheckLAPACKCompilerFlags.cmake
+index d727a1592..70f5e7f5c 100644
+--- a/CMAKE/CheckLAPACKCompilerFlags.cmake
++++ b/CMAKE/CheckLAPACKCompilerFlags.cmake
+@@ -69,8 +69,8 @@ else()
+ endif()
+ 
+ if( "${CMAKE_Fortran_FLAGS_RELEASE}" MATCHES "O[3-9]" )
+-  message( STATUS "Reducing RELEASE optimization level to O2" )
+-  string( REGEX REPLACE "O[3-9]" "O2" CMAKE_Fortran_FLAGS_RELEASE
++  message( STATUS "Reducing RELEASE optimization level to O3" )
++  string( REGEX REPLACE "O[3-9]" "O3" CMAKE_Fortran_FLAGS_RELEASE
+           "${CMAKE_Fortran_FLAGS_RELEASE}" )
+   set( CMAKE_Fortran_FLAGS_RELEASE "${CMAKE_Fortran_FLAGS_RELEASE}"
+        CACHE STRING "Flags used by the compiler during release builds" FORCE )
+-- 
+2.31.1
+
