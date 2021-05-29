@@ -114,6 +114,7 @@ BuildRequires : zlib-staticdev
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
+Patch1: 0001-Fortran-RELEASE-optimization-level-O3.patch
 
 %description
 ===============
@@ -129,6 +130,7 @@ It is composed of 5 sections:
 grep -qxF 'source /aot/intel/oneapi/setvars.sh' /builddir/.bashrc || echo 'source /aot/intel/oneapi/setvars.sh' >> /builddir/.bashrc || :
 %setup -q -n laplack
 cd %{_builddir}/laplack
+%patch1 -p1
 
 %build
 unset http_proxy
@@ -136,7 +138,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622322219
+export SOURCE_DATE_EPOCH=1622322273
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -287,7 +289,7 @@ fi
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1622322219
+export SOURCE_DATE_EPOCH=1622322273
 rm -rf %{buildroot}
 pushd clr-build
 %ninja_install

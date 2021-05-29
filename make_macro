@@ -1,0 +1,2 @@
+exit 1
+ninja --verbose  %{?_smp_mflags}
