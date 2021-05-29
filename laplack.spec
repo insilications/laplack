@@ -85,11 +85,7 @@ BuildRequires : nasm
 BuildRequires : nasm-bin
 BuildRequires : ncurses-dev
 BuildRequires : ninja
-BuildRequires : nv-codec-headers
-BuildRequires : nv-codec-headers-dev
 BuildRequires : openblas
-BuildRequires : openblas-dev
-BuildRequires : openblas-staticdev
 BuildRequires : opencl-headers
 BuildRequires : opencl-headers-dev
 BuildRequires : openjpeg-dev
@@ -138,7 +134,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622322327
+export SOURCE_DATE_EPOCH=1622322550
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -192,8 +188,7 @@ export CXXFLAGS="${CXXFLAGS_GENERATE}"
 export FFLAGS="${FFLAGS_GENERATE}"
 export FCFLAGS="${FCFLAGS_GENERATE}"
 export LDFLAGS="${LDFLAGS_GENERATE}"
-%cmake .. -GNinja \
--DCMAKE_C_FLAGS="$CFLAGS" \
+%cmake .. -DCMAKE_C_FLAGS="$CFLAGS" \
 -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
 -DCMAKE_EXE_LINKER_FLAGS="$LDFLAGS" \
 -DCMAKE_MODULE_LINKER_FLAGS="$LDFLAGS" \
@@ -248,8 +243,7 @@ export CXXFLAGS="${CXXFLAGS_USE}"
 export FFLAGS="${FFLAGS_USE}"
 export FCFLAGS="${FCFLAGS_USE}"
 export LDFLAGS="${LDFLAGS_USE}"
-%cmake .. -GNinja \
--DCMAKE_C_FLAGS="$CFLAGS" \
+%cmake .. -DCMAKE_C_FLAGS="$CFLAGS" \
 -DCMAKE_CXX_FLAGS="$CXXFLAGS" \
 -DCMAKE_EXE_LINKER_FLAGS="$LDFLAGS" \
 -DCMAKE_MODULE_LINKER_FLAGS="$LDFLAGS" \
@@ -295,7 +289,7 @@ fi
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1622322327
+export SOURCE_DATE_EPOCH=1622322550
 rm -rf %{buildroot}
 pushd clr-build
 %ninja_install
