@@ -138,7 +138,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622322273
+export SOURCE_DATE_EPOCH=1622322327
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -228,7 +228,10 @@ export LDFLAGS="${LDFLAGS_GENERATE}"
 -DUSE_XBLAS:BOOL=ON \
 -DBUILD_SHARED_LIBS:BOOL=ON \
 -DBUILD_TESTING:BOOL=ON
+## make_macro content
+exit 1
 ninja --verbose  %{?_smp_mflags}
+## make_macro end
 ## ccache stats
 ccache -s
 ## ccache stats
@@ -281,7 +284,10 @@ export LDFLAGS="${LDFLAGS_USE}"
 -DUSE_XBLAS:BOOL=ON \
 -DBUILD_SHARED_LIBS:BOOL=ON \
 -DBUILD_TESTING:BOOL=OFF
+## make_macro content
+exit 1
 ninja --verbose  %{?_smp_mflags}
+## make_macro end
 ## ccache stats
 ccache -s
 ## ccache stats
@@ -289,7 +295,7 @@ fi
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1622322273
+export SOURCE_DATE_EPOCH=1622322327
 rm -rf %{buildroot}
 pushd clr-build
 %ninja_install

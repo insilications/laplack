@@ -1,5 +1,8 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+# openblas
+# openblas-dev
+# openblas-staticdev
 binutils-dev
 binutils-extras
 buildreq-cmake
@@ -70,11 +73,6 @@ nasm
 nasm-bin
 ncurses-dev
 ninja
-nv-codec-headers
-nv-codec-headers-dev
-openblas
-openblas-dev
-openblas-staticdev
 opencl-headers
 opencl-headers-dev
 openjpeg-dev
