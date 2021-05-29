@@ -4,6 +4,7 @@ binutils-dev
 binutils-extras
 buildreq-cmake
 buildreq-distutils3
+Cython
 doxygen
 eigen
 eigen-data
@@ -15,8 +16,11 @@ gcc-libs-math
 gcc-libstdc++32
 gcc-libubsan
 gcc-locale
+gfortran
 glibc-dev
+glibc-locale
 glibc-staticdev
+glibc-utils
 hwloc
 hwloc-dev
 hwloc-extras

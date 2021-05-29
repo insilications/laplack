@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/lapackpp"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/lapackpp.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/lapackpp-complete.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-build.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-configure.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-download.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-install.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-mkdir.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-patch.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp-stamp/lapackpp-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"lapackpp"
+		],
+		"name" : "lapackpp"
+	}
+}

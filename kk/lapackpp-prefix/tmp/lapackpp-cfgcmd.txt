@@ -1,0 +1,1 @@
+cmd='/usr/bin/cmake;-E;env;LIBRARY_PATH=/insilications/apps/lapack/kk/lib;LD_LIBRARY_PATH=/insilications/apps/lapack/kk/lib;/usr/bin/cmake;-DCMAKE_INSTALL_PREFIX=/insilications/apps/lapack/kk;-DCMAKE_INSTALL_LIBDIR=lib;-DLAPACK_LIBRARIES=/usr/lib64/libopenblas.so;-lpthread;-lm;-ldl;-DBUILD_SHARED_LIBS=ON;/insilications/apps/lapack/kk/lapackpp-prefix/src/lapackpp'

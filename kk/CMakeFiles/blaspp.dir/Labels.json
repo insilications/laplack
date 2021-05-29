@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/blaspp"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/blaspp.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/CMakeFiles/blaspp-complete.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-build.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-configure.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-download.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-install.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-mkdir.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-patch.rule"
+		},
+		{
+			"file" : "/insilications/apps/lapack/kk/blaspp-prefix/src/blaspp-stamp/blaspp-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"blaspp"
+		],
+		"name" : "blaspp"
+	}
+}
