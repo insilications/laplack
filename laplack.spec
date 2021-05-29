@@ -134,7 +134,7 @@ unset https_proxy
 unset no_proxy
 export SSL_CERT_FILE=/var/cache/ca-certs/anchors/ca-certificates.crt
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1622322550
+export SOURCE_DATE_EPOCH=1622322620
 unset LD_AS_NEEDED
 mkdir -p clr-build
 pushd clr-build
@@ -225,7 +225,7 @@ export LDFLAGS="${LDFLAGS_GENERATE}"
 -DBUILD_TESTING:BOOL=ON
 ## make_macro content
 exit 1
-ninja --verbose  %{?_smp_mflags}
+make -j16 V=1 VERBOSE=1
 ## make_macro end
 ## ccache stats
 ccache -s
@@ -280,7 +280,7 @@ export LDFLAGS="${LDFLAGS_USE}"
 -DBUILD_TESTING:BOOL=OFF
 ## make_macro content
 exit 1
-ninja --verbose  %{?_smp_mflags}
+make -j16 V=1 VERBOSE=1
 ## make_macro end
 ## ccache stats
 ccache -s
@@ -289,10 +289,10 @@ fi
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1622322550
+export SOURCE_DATE_EPOCH=1622322620
 rm -rf %{buildroot}
 pushd clr-build
-%ninja_install
+%make_install
 popd
 ## install_append content
 install -dm 0755 %{buildroot}/usr/lib64/haswell/ || :
