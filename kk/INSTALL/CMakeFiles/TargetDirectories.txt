@@ -1,9 +1,0 @@
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/edit_cache.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/testversion.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/secondtst_INT_CPU_TIME.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/secondtst_INT_ETIME.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/secondtst_EXT_ETIME_.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/secondtst_EXT_ETIME.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/rebuild_cache.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/testieee.dir
-/insilications/apps/lapack/kk/INSTALL/CMakeFiles/secondtst_NONE.dir
